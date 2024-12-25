@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lyrical Leaf</title>
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="HomeStyle.css">
+</head>
+<body>
+    <!-- Header Section with Video -->
+    <header>
+        <video autoplay muted loop>
+            <source src="/Images/video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="header-content">
+            <h1>Unleash Your Inner Poet</h1>
+            <p>Share your poetic vision with the world, and inspire others through the beauty of words.</p>
+            <button class="btn-primary" onclick="redirectToJoinOurCommunity()">Join Our Community</button>
+            <button class="btn-secondary"  onclick="redirectToPoemSubmission()">Start Writing Today</button>
+        </div>
+    </header>
+    
+    <!-- Trending Poems Section -->
+    <section class="trending">
+        <h2>Trending Poems</h2>
+        <div class="poem-container">
+            <div class="poem-card">
+                <img src="/Images/pic_1.jpg" alt="Nature">
+                <h3>Nature's Peace</h3>
+                <p>This poem explores the tranquility of nature.</p>
+                <a href="#" onclick="showModal(0)">Read More</a>
+            </div>
+            <div class="poem-card">
+                <img src="/Images/pic_2.jpg" alt="Fireplace">
+                <h3>Simple Joys</h3>
+                <p>A warm poem about life's simple pleasures.</p>
+                <a href="#" onclick="showModal(1)">Read More</a>
+            </div>
+            <div class="poem-card">
+                <img src="/Images/pic_3.jpg" alt="Sunset">
+                <h3>Sunset Reflections</h3>
+                <p>Reflecting on life through the lens of a sunset.</p>
+                <a href="#" onclick="showModal(2)">Read More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Poems Section -->
+    <section class="featured">
+        <h2>Featured Poems</h2>
+        <div class="featured-poem">
+            <img src="/Images/pic_4.jpg" alt="Night Sky">
+            <h3>An Ode to the Night Sky</h3>
+            <a href="#" onclick="showModal(3)">Read More</a>
+        </div>
+        <div class="featured-poem">
+            <img src="/Images/pic_5.jpg" alt="Forest">
+            <h3>Whispers of the Forest</h3>
+            <a href="#" onclick="showModal(4)">Read More</a>
+        </div>
+    </section>
+
+    <!-- Modal for Read More -->
+    <div id="poemModal" class="modal">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeModal()">×</button>
+            <h3 id="poemTitle">Poem Title</h3>
+            <p id="poemContent">Poem content goes here.</p>
+            <!-- <div class="written-by">Written by: Author Name</div> -->
+            <button class="share-btn" onclick="copyToClipboard()">Share</button>
+        </div>
+    </div>
+    <!-- Recent Poems Section -->
+    <section class="recent">
+        <h2>Recent Poems</h2>
+        <div class="poem-container">
+            <div class="poem-card">
+                <img src="/Images/pic_6.jpg" alt="Solitude">
+                <h3>Solitude</h3>
+                <p>A reflection on solitude and nature.</p>
+                <a href="#" onclick="showModal(5)">Read More</a>
+            </div>
+            <div class="poem-card">
+                <img src="/Images/pic_7.jpg" alt="Tree">
+                <h3>Emotions</h3>
+                <p>Exploration of human emotions.</p>
+                <a href="#" onclick="showModal(6)">Read More</a>
+            </div>
+            <div class="poem-card">
+                <img src="/Images/pic_8.jpg" alt="Abstract">
+                <h3>City Lights</h3>
+                <p>The hustle and bustle of city life.</p>
+                <a href="#" onclick="showModal(7)">Read More</a>
+            </div>
+            <div class="poem-card">
+                <img src="/Images/pic_9.jpg" alt="Countryside">
+                <h3>Morning Bliss</h3>
+                <p>Morning bliss in the countryside.</p>
+                <a href="#" onclick="showModal(8)">Read More</a>
+            </div>
+            <div class="poem-card">
+                <img src="/Images/pic_10.jpg" alt="Ocean">
+                <h3>Ocean Waves</h3>
+                <p>The relentless power of the ocean.</p>
+                <a href="#" onclick="showModal(9)">Read More</a>
+            </div>
+            <div class="poem-card">
+                <img src="/Images/pic_11.jpg" alt="Forest Path">
+                <h3>Autumn Path</h3>
+                <p>The beauty of autumn in the forest.</p>
+                <a href="#" onclick="showModal(10)">Read More</a>
+            </div>
+            
+        </div>
+      <br>
+        <div class="read-more-container">
+            <a href="#" class="read-more-btn">Read More Poems</a>
+        </div>
+        
+    </section>
+    <footer>
+        <div class="footer-container">
+            <p class="footer-text">Crafted with care. <a href="mailto:siddquiaqib@gmail.com" class="footer-link">Contact Us</a></p>
+        </div>
+    </footer>
+    <script src="HomeScript.js"></script>
+</body>
+</html>

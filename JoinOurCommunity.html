@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join Our Poetry Community</title>
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        /* Global Reset and Font Setup */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        /* Body Background and Basic Styles */
+        body {
+            background: linear-gradient(135deg, #e3f2fd, #f9f9f9);
+            color: #333;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        /* Why Join Section */
+        .why-join {
+            background-color: #fff;
+            padding: 60px 20px;
+            text-align: center;
+            border-radius: 10px;
+            margin: 0;
+            width: 100%;
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+        }
+
+        .why-join h2 {
+            font-size: 3.5rem;
+            font-weight: 700;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .why-join p {
+            font-size: 1.2rem;
+            color: #555;
+            margin-bottom: 40px;
+            line-height: 1.8;
+        }
+
+        .benefits-container {
+            display: flex;
+            justify-content: space-evenly;
+            gap: 30px;
+            flex-wrap: wrap;
+            padding: 20px;
+        }
+
+        .benefit-item {
+            background-color: #f9f9f9;
+            padding: 40px 20px;
+            border-radius: 10px;
+            width: 280px;
+            text-align: center;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+        }
+
+        .benefit-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .benefit-item .icon {
+            font-size: 4rem;
+            color: #6c5ce7;
+            margin-bottom: 20px;
+            transition: transform 0.3s ease, color 0.3s ease;
+        }
+
+        .benefit-item:hover .icon {
+            transform: rotate(360deg);
+            color: #5a4fcf;
+        }
+
+        .benefit-item h3 {
+            font-size: 1.8rem;
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 15px;
+        }
+
+        .benefit-item p {
+            font-size: 1rem;
+            color: #666;
+            line-height: 1.6;
+        }
+
+        .cta-container {
+            margin-top: 40px;
+        }
+
+        .cta-container .btn-primary {
+            padding: 14px 30px;
+            font-size: 1.3rem;
+            background-color: #6c5ce7;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 600;
+            transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+        }
+
+        .cta-container .btn-primary:hover {
+            background-color: #5a4fcf;
+            transform: translateY(-3px);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Footer Styling */
+        footer {
+            background-color: #fff;
+            color: #333;
+            text-align: center;
+            padding: 20px 0;
+            font-size: 1rem;
+            width: 100%;
+            border-top: 1px solid #eaeaea;
+            box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .footer-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .footer-text {
+            font-size: 1.1rem;
+            color: #333;
+            margin: 0;
+        }
+
+        .footer-link {
+            color: #6c5ce7;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        .footer-link:hover {
+            color: #5a4fcf;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .why-join {
+                padding: 40px 20px;
+            }
+
+            .why-join h2 {
+                font-size: 2.4rem;
+            }
+
+            .why-join p {
+                font-size: 1.1rem;
+            }
+
+            .benefits-container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .benefit-item {
+                width: 100%;
+                max-width: 350px;
+                margin-bottom: 30px;
+            }
+
+            .cta-container .btn-primary {
+                padding: 12px 24px;
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Why Join Section -->
+    <main>
+        <section class="why-join">
+            <h2>Why Join Us?</h2>
+            <p>Our platform is made for poets, by poets. Whether you're an aspiring poet or a seasoned writer, we offer a supportive community where your voice can be heard. Join a growing network of creators who are passionate about poetry!</p>
+
+            <div class="benefits-container">
+                <div class="benefit-item">
+                    <div class="icon"><i class="fas fa-share-alt"></i></div>
+                    <h3>Share Your Work</h3>
+                    <p>Post your poems and get inspired by others from around the world.</p>
+                </div>
+                <div class="benefit-item">
+                    <div class="icon"><i class="fas fa-users"></i></div>
+                    <h3>Engage with Poets</h3>
+                    <p>Collaborate and connect with a vibrant community that shares your passion.</p>
+                </div>
+                <div class="benefit-item">
+                    <div class="icon"><i class="fas fa-pencil-alt"></i></div>
+                    <h3>Grow Your Craft</h3>
+                    <p>Receive constructive feedback and improve your writing with challenges and workshops.</p>
+                </div>
+            </div>
+
+            <div class="cta-container">
+                <a href="PoemSubmission.html" class="btn-primary">Join Now</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-container">
+            <p class="footer-text">Created with passion. <a href="mailto:siddquiaqib@gmail.com" class="footer-link">Contact Us</a></p>
+        </div>
+    </footer>
+
+    <!-- Font Awesome Icons (for icons in benefit items) -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</body>
+</html>
